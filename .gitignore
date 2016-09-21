@@ -6,4 +6,5 @@ cmake_install.cmake
 install_manifest.txt
 CTestTestfile.cmake
 .DS_Store
+.ycm_extra_conf.py*
 build/

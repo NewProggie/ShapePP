@@ -9,22 +9,22 @@
 
 // define host OS
 #if defined(_WIN32) || defined(_WIN64)
-#define OS_WINDOWS 1
+  #define OS_WINDOWS 1
 #elif defined(__APPLE__)
-#define OS_MACOSX 1
+  #define OS_MACOSX 1
 #elif defined(__FreeBSD__)
-#define OS_FREEBSD 1
+  #define OS_FREEBSD 1
 #elif defined(__linux__)
-#define OS_LINUX 1
+  #define OS_LINUX 1
 #endif
 
 // determine used compiler
 #if defined(__clang__)
-#define COMPILER_CLANG
+  #define COMPILER_CLANG
 #elif defined(_MSC_VER)
-#define COMPILER_MSVC
+  #define COMPILER_MSVC
 #elif defined(__GNUC__)
-#define COMPILER_GCC
+  #define COMPILER_GCC
 #endif
 
 #endif

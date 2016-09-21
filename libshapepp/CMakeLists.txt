@@ -2,7 +2,6 @@ project(libshapepp VERSION 0.1 LANGUAGES CXX)
 
 add_library(libshapepp
     src/constraint.cpp
-    src/force.cpp
     src/ls_solver.cpp
     src/solver.cpp)
 
