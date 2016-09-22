@@ -12,8 +12,8 @@ target_include_directories(libshapepp PUBLIC
     $<INSTALL_INTERFACE:include>
     PRIVATE thirdparty/eigen-2.3.9
     PRIVATE src)
-target_compile_features(libshapepp
-    PUBLIC cxx_auto_type)
+set_target_properties(libshapepp PROPERTIES CXX_STANDARD 14)
+set_target_properties(libshapepp PROPERTIES CXX_STANDARD_REQUIRED ON)
 
 # 'make install' to the correct location
 install(TARGETS libshapepp EXPORT ShapePPConfig
